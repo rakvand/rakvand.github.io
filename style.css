@@ -230,6 +230,11 @@ footer {
   .column {
     width: 100%;
   }
+  .column img {
+    display: flex;
+    align-items: center;
+    float: none;
+  }
   .column iframe {
     width: 90%;
     padding-bottom: 30px;
