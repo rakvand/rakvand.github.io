@@ -1,0 +1,246 @@
+body {
+    font-family: Inconsolata, Consolas, monospace;
+    color: #3B9212;
+    background-color: #060e02;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #060e02;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    position: fixed;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    color: white;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.5em;
+  }
+
+  main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+    padding-bottom: 50px;
+  }
+  
+.home { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10em;
+  padding-top: 150px;
+  } 
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10em;
+  font-size: 30px;
+}
+ 
+.about {
+  padding-top: 150px; 
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.about p {
+  width: 90%;
+  padding: 30px;
+  text-align: center;
+}
+
+.row-aboutme {
+  padding-bottom: 250px;
+  margin-bottom: 200px;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+  text-align: left;
+  padding-top: 10px;
+}
+
+li {
+  position: relative;
+  padding-left: 15em;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+li:before {
+  content: "»";
+  display: block;
+  float: left;
+  width: 1.2em;
+  color: white;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.column img {
+  width: 300px;
+  margin: auto;
+  float: right;
+}
+
+.column h2 {
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cv {
+  text-align: center;
+  padding-top: 150px;
+}
+
+.cv h2 {
+  font-size: 28px;
+}
+
+.cv-item {
+  padding-top: 10px;
+  font-size: 18px;
+  border-top: 2px solid white;
+}
+
+.cv-item h4 {
+  font-size: 22px;
+}
+
+.cv-item h6 {
+  font-size: 16px;
+}
+
+.row-contact {
+  padding-top: 150px;
+}
+
+.row-contact h2 {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.column iframe {
+  padding-left: 50px;
+  width: 70%;
+}
+
+.column input[type=text] {
+  height: 40px;
+  width: 50%;
+}
+
+.column textarea {
+  width: 50%;
+  resize: vertical;
+}
+
+.column input[type=submit] {
+  width: 20%;
+  padding: 12px 20px;
+  margin-bottom: 50px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 30px;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+  .name {
+    padding-bottom: 0;
+  }
+  .column {
+    width: 100%;
+  }
+  .skill-item li {
+    padding-left: 50px;   
+  }
+  .row-aboutme li {
+    padding-left: 50px;
+  }
+  .column iframe {
+    width: 90%;
+    padding-bottom: 30px;
+  }
+  form {
+    margin-left: 40px;
+  }
+  .column label, input[type=text], textarea {
+    width: 70%;
+    margin-left: 20px;
+  }
+  .column input[type=submit] {
+    width: 40%;
+    margin-left: 20px;
+  }
+ 
+}
+
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  .row-contact {
+    width: 100%;
+  }
+  .column {
+    width: 100%;
+  }
+  .column iframe {
+    width: 90%;
+    padding-bottom: 30px;
+  }
+  .column label, input[type=text], textarea {
+    width: 70%;
+    margin-left: 20px;
+  }
+  .column input[type=submit] {
+    width: 40%;
+    margin-left: 20px;
+  }
+
+}
