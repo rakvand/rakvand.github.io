@@ -242,6 +242,9 @@ footer {
     width: 90%;
     padding-bottom: 30px;
   }
+  form {
+    margin-left: 40px;
+  }
   .column label, input[type=text], textarea {
     width: 70%;
     margin-left: 20px;
