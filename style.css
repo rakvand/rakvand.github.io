@@ -213,12 +213,15 @@ footer {
     margin-left: 40px;
   }
   .column label, input[type=text], textarea {
-    width: 70%;
+    width: 90%;
     margin-left: 20px;
   }
   .column input[type=submit] {
     width: 40%;
     margin-left: 20px;
+  }
+  footer {
+    font-size: 12px;    
   }
  
 }
